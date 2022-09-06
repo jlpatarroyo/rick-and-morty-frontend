@@ -1,0 +1,49 @@
+@import "../../../styles/settings";
+
+.character-details-container {
+  display: flex;
+  gap: 30px;
+  & img {
+    height: 200px;
+    @media (max-width: $tablet) {
+      width: 100%;
+      height: auto;
+    }
+  }
+  & .character-name {
+    font-size: 24px;
+    text-align: left;
+    height: fit-content;
+  }
+  @media (max-width: $tablet) {
+    flex-direction: column;
+  }
+}
+
+.details-header {
+  display: flex;
+  align-items: center;
+}
+
+.character-status-badges-container {
+  display: flex;
+  gap: 10px;
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.character-details {
+  width: 100%;
+}
+
+.character-secondary-details {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 14px;
+  margin-top: 15px;
+  color: $light-gray-1;
+  @media (max-width: $tablet) {
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,28 @@
+@import "../../styles/settings";
+
+.CharacterFilters {
+  padding: 24px;
+  max-width: 1240px;
+  border-radius: 16px;
+  @media (max-width: $tablet) {
+    padding: 0 10px;
+  }
+}
+
+.filters-fields {
+  display: flex;
+  width: 100%;
+}
+
+.filter-field {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  gap: 5px;
+  width: 100%;
+  max-width: 600px;
+}
+
+label {
+  font-size: 14px;
+}

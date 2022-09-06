@@ -1,0 +1,42 @@
+@import "../../styles/settings";
+
+.CharacterStatusBadge {
+  width: fit-content;
+  display: flex;
+  padding: 3px 8px;
+  align-items: center;
+  gap: 5px;
+  font-size: 14px;
+  border-radius: 6px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  &.Alive {
+    background-color: $light-green;
+    color: rgb(0, 31, 0);
+  }
+  &.Dead {
+    background-color: $light-red;
+    color: rgb(65, 0, 0);
+  }
+  &.unknown {
+    background-color: $light-gray-1;
+    color: black;
+  }
+}
+
+.status-badge-dot {
+  min-width: 8px;
+  max-width: 8px;
+  min-height: 8px;
+  max-height: 8px;
+  border-radius: 50%;
+  &.Alive {
+    background-color: $green-primary;
+  }
+  &.Dead {
+    background-color: $red;
+  }
+  &.unknown {
+    background-color: $gray-1;
+  }
+}

@@ -1,0 +1,36 @@
+@import "./variables";
+
+h3 {
+  margin: 0;
+}
+
+label {
+  font-size: 14px;
+  @media (max-width: $tablet) {
+    font-size: 12px;
+  }
+}
+
+button {
+  height: 40px;
+  padding: 0 10px;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+input {
+  height: 40px;
+  border: none;
+  background-color: $lighter-dark-gray;
+  border-radius: 6px;
+  padding: 0 10px;
+  color: white;
+  width: 100%;
+  &:focus {
+    outline: none;
+  }
+}

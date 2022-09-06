@@ -1,0 +1,29 @@
+@import "./styles/settings";
+
+html {
+  box-sizing: border-box;
+  font-family: "Mulish", sans-serif;
+  overflow: hidden;
+  max-height: 100vh;
+  max-height: -webkit-fill-available;
+  height: 100vh;
+  height: -webkit-fill-available;
+  height: 100%;
+}
+
+body,
+#root {
+  height: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.App {
+  background-color: $darker-gray;
+  height: 100%;
+  color: white;
+}
